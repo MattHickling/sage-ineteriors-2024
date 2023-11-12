@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Sage Interiors - Plastering Experts</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+     <title>Sage Interiors - Plastering Experts</title>
 </head>
+
+<!-- ... Your existing code ... -->
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <!-- <img src="path/to/your/logo.png" alt="Sage Interiors Logo"> -->
+                <img class="logo-img" src="assets/images/logo.png" alt="Sage Interiors Logo">
+            </div>
+            <div class="burger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -21,29 +30,121 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
-        <div class="hero">
+    </header>
+
+    <section class="hero">
+        <div class="overlay-text">
             <h1>Welcome to Sage Interiors</h1>
             <p>Your trusted experts in plastering solutions</p>
         </div>
-    </header>
+        <div class="large-image">
+            <img src="assets/images/background.png" alt="Background Image">
+        </div>
+    </section>
+    <section id="about" class="section about-section">
+        <h2>About Us</h2>
+        <p>Our commitment to excellence extends to the meticulous craft of plasterwork. With a passion for transforming surfaces, our skilled craftsmen bring years of expertise to every project. At Sage Interiors, we don't just enhance spaces; we sculpt them with precision and quality plastering. Your vision meets our proficiency – choose Sage Interiors for plastering solutions that redefine the aesthetics and durability of your residential and commercial spaces.</p>
 
-    <section id="services" class="section">
+        <div class="about-points">
+            <div class="about-point">
+                <h3>Expert Craftsmanship</h3>
+                <p>With years of experience, our skilled craftsmen bring expertise and precision to every project. We take pride in delivering top-notch plastering, drylining, partitioning, and suspended ceiling solutions.</p>
+            </div>
+    
+            <div class="about-point">
+                <h3>Quality Materials</h3>
+                <p>We believe in using only the highest quality materials to ensure durability and longevity. Our commitment to quality extends to every detail of our work, from start to finish.</p>
+            </div>
+    
+            <div class="about-point">
+                <h3>Customer Satisfaction</h3>
+                <p>Your satisfaction is our priority. We work closely with our clients to understand their needs and preferences, ensuring that the final result exceeds expectations. Our goal is to transform your vision into reality.</p>
+            </div>
+    
+            <div class="about-point">
+                <h3>Timely Delivery</h3>
+                <p>We understand the importance of timelines. Our team is dedicated to completing projects on schedule while maintaining the highest standards of quality. You can trust us to deliver on time and within budget.</p>
+            </div>
+    
+            <div class="about-point">
+                <h3>Professionalism</h3>
+                <p>Sage Interiors is known for professionalism in every aspect of our work. From communication to execution, we prioritize clear and transparent interactions, ensuring a smooth and stress-free experience for our clients.</p>
+            </div>
+        </div>
+    
+    </section>
+
+   
+    <section id="services" class="section services-section">
         <h2>Our Services</h2>
-        <p>We specialize in providing high-quality plastering services for residential and commercial spaces.</p>
-    </section>
+        <div class="service-item">
+            <h2>Plastering</h2>
+            <p>We provide high-quality plastering services for residential and commercial spaces.</p>
+        </div>
 
-    <section id="work" class="section">
-        <h2>Testimonials & Previous Work</h2>
-    </section>
+        <div class="service-item">
+            <h2>Drylining</h2>
+            <p>Our drylining solutions enhance the aesthetics and functionality of your interiors.</p>
+        </div>
 
+        <div class="service-item">
+            <h2>Partitioning</h2>
+            <p>Efficient and stylish partitioning options tailored to your specific needs.</p>
+        </div>
+
+        <div class="service-item">
+            <h2>Suspended Ceilings</h2>
+            <p>Elevate your space with our expertly crafted suspended ceiling installations.</p>
+        </div>
+    </section>
+    
+
+    <section id="testimonials" class="section testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-item">
+                <p class="testimonial-text">"The team at Sage Interiors exceeded our expectations. Their attention to detail and quality of work is outstanding."</p>
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-author">- John Doe, Homeowner</p>
+            </div>
+            <div class="testimonial-item">
+                <p class="testimonial-text">"We were impressed with the professionalism and efficiency of Sage Interiors. They delivered on time and within budget."</p>
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-author">- Jane Smith, Business Owner</p>
+            </div>
+            <!-- Add more testimonial items as needed -->
+        </div>
+    </section>
     <section id="contact" class="section">
         <h2>Contact Us</h2>
         <p>Ready to transform your space? Reach out to us for a quote or any inquiries.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Sage Interiors. All rights reserved.</p>
-    </footer>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+ 
+        <script>
+            $(document).ready(function(){
+                $('.testimonial-carousel').slick({
+                    dots: true, // Show dots for navigation
+                    arrows: false, // Hide default arrows
+                    autoplay: true, // Enable autoplay
+                    autoplaySpeed: 5000, // Set autoplay speed in milliseconds (adjust as needed)
+                });
+            });
+        </script>
+    </body>
 
 </html>
