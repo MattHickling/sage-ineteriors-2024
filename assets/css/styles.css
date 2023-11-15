@@ -168,10 +168,6 @@ footer {
     color: #ccc;
 }
 
-.about-section p {
-    margin-top: 20px;
-}
-
 .services-section {
     background-color: #c0c0c0; /* Light gray color for services-section */
     padding: 50px;
@@ -186,9 +182,9 @@ footer {
 
 .service-item {
     flex: 0 0 calc(25% - 40px); /* Adjust the percentage to control the width and spacing */
-    background-color: #fff; /* White background for service cards */
+    background-color: #ffcc00; /* Updated color for service cards */
     color: #00274e; /* Dark blue text color */
-    border-radius: 0; /* Make the cards square */
+    border-radius: 10px; /* Add border-radius for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
     overflow: hidden; /* Ensure the shadow is visible */
     margin: 20px;
@@ -203,6 +199,7 @@ footer {
 .service-item p {
     color: #555; /* Dark gray color for service paragraphs */
 }
+
 .testimonials-section {
     background-color: #00274e; /* Dark blue color for testimonials-section */
     color: #fff; /* White text color */
@@ -241,7 +238,44 @@ footer {
     font-size: 1.1em;
     color: #555;
 }
+.contact-section {
+    background-color: #00274e; /* Dark blue color for contact-section */
+    color: #fff; /* White text color */
+    padding: 50px;
+    text-align: center;
+}
 
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffcc00; /* Yellow color for labels */
+}
 
-/* ... Your existing styles ... */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for larger input fields */
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#contact-form button {
+    background-color: #ffcc00; /* Yellow color for the button */
+    color: #00274e; /* Dark blue text color for the button */
+    padding: 15px 20px; /* Increased padding for larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#contact-form button:hover {
+    background-color: #008080; /* Dark cyan color on hover */
+}
