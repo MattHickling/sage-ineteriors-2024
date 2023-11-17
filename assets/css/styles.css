@@ -6,9 +6,11 @@ body {
 
 header {
     position: relative;
-    background: linear-gradient(to right, #000, #000, #00274e, #008080, #c0c0c0);
+    /* background: linear-gradient(to right, #4a90e2, #4682b4, #5f9ea0, #7fffd4, #c0c0c0); */
+    background-color: #ffc107;
     color: #fff;
     padding: 10px 20px;
+    z-index: 2; /* Set a higher z-index to bring the header in front */
 }
 
 nav {
@@ -35,7 +37,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #333; /* Change the color of the navigation links */
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -48,6 +50,7 @@ nav a {
     padding: 0;
     background: url('assets/images/background.png') center/cover no-repeat;
     border-top: 1px solid white;
+    z-index: 1; /* Set a lower z-index to place the hero image behind the header */
 }
 
 .overlay-text {
@@ -75,6 +78,7 @@ nav a {
     width: 100%;
     height: auto;
 }
+
 @media (max-width: 768px) {
     .logo-img {
         width: 100px; /* Adjust the size of the logo for mobile view */
