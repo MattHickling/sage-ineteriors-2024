@@ -10,7 +10,7 @@ header {
     background-color: #ffc107;
     color: #fff;
     padding: 10px 20px;
-    z-index: 2; /* Set a higher z-index to bring the header in front */
+    z-index: -1; 
 }
 
 nav {
@@ -139,6 +139,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+.about-us-title{
+    font-size: 2.5rem;
 }
 
 .about-section {
