@@ -4,42 +4,59 @@ body {
     padding: 0;
 }
 
-header {
-    position: relative;
-    /* background: linear-gradient(to right, #4a90e2, #4682b4, #5f9ea0, #7fffd4, #c0c0c0); */
-    background-color: #ffc107;
-    color: #fff;
-    padding: 10px 20px;
-    z-index: -1; 
+.navbar {
+    background-color: black;
+    padding: 20px 0;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
 }
 
-nav {
+
+.container-fluid {
     display: flex;
+    align-items: center; /* Center items vertically */
     justify-content: space-between;
-    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    justify-content: center;
+}
+.navbar-nav {
+    margin-left: auto; /* Move navbar links to the right */
+}
+
+.nav-link {
+    color: #ffff;
 }
 
 .logo-img {
-    width: 150px;
+    width: 40%;
     height: auto;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav li {
-    margin-right: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333; /* Change the color of the navigation links */
-    font-weight: bold;
-    font-size: 1.2em;
+.navbar-toggler {
+    border: none; /* Remove border from the toggler button */
+}
+
+.navbar-collapse {
+    background-color: black; /* Set the background color of the collapsed navbar */
+    padding: 6px; /* Add padding to the collapsed navbar */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: 10px; /* Add space between navbar items */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Set the text color of navbar links to white */
 }
 
 .hero {
@@ -48,9 +65,8 @@ nav a {
     color: #ffcc00;
     margin: 0;
     padding: 0;
-    background: url('assets/images/background.png') center/cover no-repeat;
     border-top: 1px solid white;
-    z-index: 1; /* Set a lower z-index to place the hero image behind the header */
+    z-index: 1;
 }
 
 .overlay-text {
@@ -77,61 +93,6 @@ nav a {
 .large-image img {
     width: 100%;
     height: auto;
-}
-
-@media (max-width: 768px) {
-    .logo-img {
-        width: 100px; /* Adjust the size of the logo for mobile view */
-    }
-
-    nav ul {
-        display: none; /* Hide the navigation items by default */
-        flex-direction: column; /* Arrange items vertically */
-        position: absolute;
-        top: 60px; /* Adjust the distance from the top */
-        left: 0;
-        right: 0;
-        background: #00274e; /* Match the navigation bar color */
-        padding: 20px;
-        border-bottom: 1px solid #fff;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-
-    nav a {
-        font-size: 1.5em; /* Adjust font size for better visibility */
-    }
-
-    nav.active ul {
-        display: flex; /* Show the navigation items when the navigation is active */
-    }
-
-    .burger-icon {
-        display: block; /* Show the burger icon for mobile view */
-        cursor: pointer;
-    }
-
-    .burger-icon div {
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    .burger-icon.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .burger-icon.active div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger-icon.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
 }
 
 footer {
@@ -246,6 +207,7 @@ footer {
     font-size: 1.1em;
     color: #555;
 }
+
 .contact-section {
     background-color: #00274e; /* Dark blue color for contact-section */
     color: #fff; /* White text color */
