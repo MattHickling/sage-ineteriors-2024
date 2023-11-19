@@ -5,34 +5,20 @@ body {
 }
 
 .navbar {
-    background-color: black;
-    padding: 20px 0;
+    background-color: black; /* Set the background color of the navbar to black */
+    padding: 20px 0; /* Add padding to the navbar */
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
 }
 
-
 .container-fluid {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    justify-content: space-between; /* Distribute items evenly with extra space between them */
     background-color: black;
 }
 
-.logo {
-    display: flex;
-    align-items: center; /* Center logo vertically */
-    justify-content: center;
-}
-.navbar-nav {
-    margin-left: auto; /* Move navbar links to the right */
-}
-
-.nav-link {
-    color: #ffff;
-}
-
 .logo-img {
-    width: 40%;
+    width: 300px;
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
