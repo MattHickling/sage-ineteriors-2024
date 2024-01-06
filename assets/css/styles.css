@@ -1,6 +1,9 @@
 .navbar {
-    background-color: #0757a7; /* Change the background color as needed */
-    padding: 10px;
+    background-color: #0757a7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+    position: relative;
 }
 
 .navbar-toggler {
@@ -8,23 +11,37 @@
     outline: none;
     padding: 0;
     cursor: pointer;
-    background-color: #fff; /* Set the background color of the button to white */
+    background-color: #fff;
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
 .navbar-toggler-icon {
-    background-color: #0757a7; /* Change the color of the burger menu icon */
+    background-color: #0757a7;
 }
 
 .logo {
     text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo-img {
     max-width: 100%;
     height: auto;
+}
+
+.collapse.navbar-collapse {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background-color: #0757a7; 
+    color: #fff;
+    padding: 10px; 
+    z-index: 2; 
 }
 
 .navbar-nav {
@@ -33,5 +50,59 @@
 }
 
 .navbar-nav a {
-    color: #fff !important; /* Change the color of the navigation links */
+    color: #fff !important;
+}
+
+@media (min-width: 536px) {
+    .navbar {
+        height: 350px; 
+    }
+    .logo-img {
+        margin-top: 15px;
+        height: auto;
+    }
+    .collapse.navbar-collapse {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        right: 0;
+        background-color: #0757a7; 
+        color: #fff;
+        padding: 10px; 
+        z-index: 2; 
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+   
+    .collapse.navbar-collapse {
+        display: block !important;
+        position: relative;
+        margin-bottom: -330px; 
+    }
+
+    .navbar {
+        height: 400px;
+    }
+    .logo-img {
+        max-width: 90%;
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .navbar-nav {
+        margin-top: auto; 
+        margin-left: auto; 
+    }
+
+    .nav-item {
+        margin-left: 15px; 
+    }
+    
+    
+
 }
