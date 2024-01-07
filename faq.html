@@ -13,49 +13,44 @@
     <title>Sage Interiors - Plastering Experts</title>
 </head>
 <style>
-    /* Custom styles to align the navbar links to the right */
-    .navbar-nav {
-        margin-left: auto;
-    }
+   
 </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <div class="logo">
-            <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/services.html"> 
+                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                </a>            
+            </div>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services.html">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-
-
+    
     <h1>Plastering FAQ</h1>
 
     <div class="faq-item">
@@ -105,20 +100,28 @@
       <div class="faq-question">Q: Can plastered surfaces be painted?</div>
       <div class="faq-answer">A: Yes, plastered surfaces can be painted once they are fully dry and cured. It's important to use the appropriate type of paint and follow proper painting techniques for the best results.</div>
   </div>
+
+
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <p>Ready to transform your space? Reach out to us for a quote or any inquiries.</p>
+    <form id="contact-form" action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 
-<script>
-    $(document).ready(function () {
-        $('.testimonial-carousel').slick({
-            dots: true,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 5000,
-        });
-    });
-</script>
 </html>

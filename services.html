@@ -21,61 +21,78 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <div class="logo">
-            <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/services.html"> 
+                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                </a>
+            </div>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services.html">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+    </nav>
+
+<section id="services" class="section services-section">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <h2>Plastering</h2>
+        <p>Transform your spaces with our high-quality plastering services. Whether it's a residential home or a commercial property, our skilled craftsmen ensure impeccable finishes that stand the test of time. From repairs to new installations, we take pride in enhancing the visual appeal of your interiors.</p>
     </div>
-</nav>
 
-    <section id="services" class="section services-section">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h2>Plastering</h2>
-            <p>We provide high-quality plastering services for residential and commercial spaces.</p>
-        </div>
+    <div class="service-item">
+        <h2>Drylining</h2>
+        <p>Improve both the aesthetics and functionality of your interiors with our expert drylining solutions. We offer tailored options to suit your unique needs, providing a smooth and flawless surface for further decoration. Our team focuses on precision and efficiency, turning your vision into reality.</p>
+    </div>
 
-        <div class="service-item">
-            <h2>Drylining</h2>
-            <p>Our drylining solutions enhance the aesthetics and functionality of your interiors.</p>
-        </div>
+    <div class="service-item">
+        <h2>Partitioning</h2>
+        <p>Create efficient and stylish spaces with our partitioning solutions. Tailored to your specific needs, our partitioning options not only divide areas seamlessly but also add a touch of sophistication to your interiors. Whether it's for office spaces or residential areas, we design partitions that complement your overall design.</p>
+    </div>
 
-        <div class="service-item">
-            <h2>Partitioning</h2>
-            <p>Efficient and stylish partitioning options tailored to your specific needs.</p>
-        </div>
+    <div class="service-item">
+        <h2>Suspended Ceilings</h2>
+        <p>Elevate your space with our expertly crafted suspended ceiling installations. Beyond their aesthetic appeal, suspended ceilings provide practical benefits such as sound insulation and easy access to utilities. Our team ensures precise installation, enhancing both the functionality and visual appeal of your space.</p>
+    </div>   
+</section>
 
-        <div class="service-item">
-            <h2>Suspended Ceilings</h2>
-            <p>Elevate your space with our expertly crafted suspended ceiling installations.</p>
-        </div>
-    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2>Contact Us</h2>
+        <p>Ready to transform your space? Reach out to us for a quote or any inquiries.</p>
+        <form id="contact-form" action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+      </section>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

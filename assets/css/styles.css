@@ -106,3 +106,302 @@
     
 
 }
+
+/* About Section */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-us-title {
+    color: #0757a7;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #0757a7;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.contact-section h2,
+.contact-section p {
+    color: #fff;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: #fff;
+    color: #0757a7;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0757a7;
+    color: #fff;
+}
+
+/* General Section Styles */
+.section {
+    text-align: center;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #0757a7;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#introduction {
+    background-color: #0757a7; /* Dark blue background color */
+    color: #fff; /* White text color */
+    padding: 60px 0; /* Adjust padding for spacing */
+    text-align: center;
+    border-top: 5px solid #ecb22e; /* Yellow border at the top for emphasis */
+}
+
+.introduction-title {
+    font-size: 2.5em; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Adjust space between title and content */
+}
+
+.introduction-section p {
+    font-size: 1.4em; /* Adjust font size for better readability */
+    line-height: 1.8; /* Adjust line height for more spacing */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the text */
+}
+
+/* Our Work Section */
+.our-work-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 0; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+/* Our Work Section */
+.our-work-section {
+    background-color: #ffc107; /* Use a different background color, like yellow */
+    padding: 60px 0; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.our-work-title {
+    color: #0757a7; /* Dark blue color for the title */
+    font-size: 2.5em; /* Increase font size for emphasis */
+    margin-bottom: 30px; /* Increase space between the title and content */
+}
+
+.our-work-section p {
+    color: #555; /* Slightly darker text color for better contrast */
+    font-size: 1.3em; /* Adjust the font size as needed */
+    line-height: 1.8; /* Adjust the line height for better readability */
+    margin-bottom: 40px; /* Increase space below the paragraph */
+}
+
+.btn-primary {
+    background-color: #e44d26; /* Use a different color for the button */
+    color: #fff;
+    padding: 12px 24px; /* Increase padding for a larger button */
+    text-decoration: none;
+    border-radius: 8px; /* Add a bit more rounding to the button */
+    border: 2px solid #e44d26; /* Add a border for better visibility */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #053d6b; /* Darken the hover color */
+    border-color: #053d6b; /* Adjust border color on hover */
+}
+
+/* Services Section */
+.services-section {
+    background-color: #ffc107;;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: #0757a7;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h2 {
+    color: #0757a7;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    color: #555;
+}
+
+
+/* General Section Styles */
+.section {
+    text-align: center;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Bootstrap Overrides */
+.container-fluid {
+    max-width: 1200px; /* Adjust container width as needed */
+}
+
+   /* Additional styles for the testimonials section */
+.testimonials-section {
+    background-color: #b1c4d8; /* Light background color */
+    padding: 40px 0; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: #0757a7; /* Dark blue color for the title */
+    margin-bottom: 20px; /* Space between the title and content */
+}
+
+.testimonial-item {
+    background-color: #ffeeba; /* Yellow background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-item p {
+    color: #333; /* Dark text color */
+}
+
+.star-rating {
+    color: #f39c12; /* Yellow color for stars */
+}
+
+.star {
+    font-size: 1.5em;
+}
+
+.testimonial-author {
+    color: #6c757d; /* Gray color for author */
+    margin-top: 10px;
+}
+ /* Gallery Section Styles */
+ .gallery-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery-title {
+    color: #0757a7; /* Dark blue color for the title */
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Space between the title and content */
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.faq-item {
+    background-color: #ffffff; /* White background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 1em;
+}
+
+ /* Additional styles for the contact section */
+ .contact-section {
+    text-align: center;
+}
+
+.contact-reasons {
+    margin: 30px 0;
+}
+
+.contact-reasons p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.follow-us {
+    margin-top: 30px;
+}
+
+.follow-us a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0757a7; /* Dark blue color for links */
+    font-size: 1.5em;
+}
+
+.follow-us a:hover {
+    text-decoration: underline;
+    color: #f8f9fa;
+}
+
+.phone-contact {
+    margin-top: 30px;
+}
+
+.phone-icon {
+    color: #0757a7; /* Dark blue color for phone icon */
+    font-size: 2em;
+    margin-right: 10px;
+}

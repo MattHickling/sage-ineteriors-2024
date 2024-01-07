@@ -9,56 +9,69 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Sage Interiors - Plastering Experts</title>
-</head>
-<style>
-    /* Custom styles to align the navbar links to the right */
-    .navbar-nav {
-        margin-left: auto;
-    }
-</style>
+
+    <style>
+      
+       
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <div class="logo">
-            <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/services.html"> 
+                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                </a>            
+            </div>
+            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services.html">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
+    </nav>
 
     <section id="contact" class="section contact-section">
-        <h2>Contact Us</h2>
         <p>Ready to transform your space? Reach out to us for a quote or any inquiries.</p>
+
+        <!-- Reasons to Contact Us -->
+        <div class="contact-reasons">
+            <p>Why Contact Us?</p>
+            <p>Our team of experts is ready to assist you in creating the perfect interior for your space. Whether it's plastering, drylining, partitioning, or suspended ceilings, we've got you covered!</p>
+        </div>
+
+        <!-- Follow Us Links -->
+        <div class="follow-us">
+            <p>Follow us on social media for updates:</p>
+            <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-instagram"></i></a>
+        </div>
+
+        
+
+        <!-- Contact Form -->
         <form id="contact-form" action="contact.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -71,21 +84,18 @@
     
             <button type="submit">Submit</button>
         </form>
+
+        <!-- Phone Contact -->
+        <div class="phone-contact">
+            <p>For immediate assistance, give us a call:</p>
+            <p><i class="fas fa-phone"></i> 07538016478</p>
+        </div>
+
     </section>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-
-  <script>
-      $(document).ready(function () {
-          $('.testimonial-carousel').slick({
-              dots: true,
-              arrows: false,
-              autoplay: true,
-              autoplaySpeed: 5000,
-          });
-      });
-  </script>
 </body>
 </html>
