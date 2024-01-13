@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <a href="/services.html"> 
-                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                    <img class="logo-img" id="logoImage" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
                 </a>
             </div>
             <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -40,7 +40,7 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects.html">Projects</a>
+                        <a class="nav-link" href="/projects.html">Our Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/faq.html">FAQ</a>
@@ -107,6 +107,18 @@
               autoplaySpeed: 5000,
           });
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+            var logoImage = document.getElementById("logoImage");
+
+            if (logoImage.complete) {
+                logoImage.classList.add("loaded");
+            } else {
+                logoImage.onload = function () {
+                    logoImage.classList.add("loaded");
+                };
+            }
+        });
   </script>
 </body>
 </html>

@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <a href="/services.html"> 
-                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                    <img class="logo-img" id="logoImage" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
                 </a>            
             </div>
             <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="/services.html">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects.html">Projects</a>
+                        <a class="nav-link" href="/projects.html">Our Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact.html">Contact Us</a>
@@ -51,12 +51,7 @@
     </nav>
 
     
-    <h1>Plastering FAQ</h1>
-
-    <div class="faq-item">
-        <div class="faq-question">Q: What is plastering?</div>
-        <div class="faq-answer">A: Plastering is a construction and finishing technique used to cover and smooth the walls and ceilings of buildings.</div>
-    </div>
+    <h1 class="faq">FAQ</h1>
 
     <div class="faq-item">
         <div class="faq-question">Q: What materials are commonly used in plastering?</div>
@@ -100,6 +95,64 @@
       <div class="faq-question">Q: Can plastered surfaces be painted?</div>
       <div class="faq-answer">A: Yes, plastered surfaces can be painted once they are fully dry and cured. It's important to use the appropriate type of paint and follow proper painting techniques for the best results.</div>
   </div>
+  <div class="faq-item">
+    <div class="faq-question">Q: How much does plastering typically cost?</div>
+    <div class="faq-answer">A: The cost of plastering varies based on factors such as the size of the area, the type of plaster used, and the complexity of the project. It's best to get a detailed quote from a professional plastering service.</div>
+</div>
+<div class="faq-item">
+    <div class="faq-question">Q: Is a suspended ceiling a good idea for an office?</div>
+    <div class="faq-answer">A: Yes, a suspended ceiling not only looks great in a office or commercial space, but is also very functional and efficient, allowing for the easy installtion of lighting and also insulation. </div>
+</div>
+<div class="faq-item">
+    <div class="faq-question">Q: What types of partitions are commonly used in construction?</div>
+    <div class="faq-answer">A: Common partition types include stud partitions, and glass partitions. The choice depends on factors such as structural requirements, aesthetics, and acoustic considerations.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: How are suspended ceilings installed?</div>
+    <div class="faq-answer">A: Suspended ceilings are typically installed by suspending a grid system from the existing ceiling and placing ceiling tiles within the grid. This allows for easy access to utilities and provides a clean, finished look.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: Can I install a suspended ceiling in a room with high humidity?</div>
+    <div class="faq-answer">A: While suspended ceilings can be installed in various environments, high humidity levels may affect certain materials. It's advisable to choose moisture-resistant ceiling tiles. </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: Are there eco-friendly options for plastering and suspended ceilings?</div>
+    <div class="faq-answer">A: Yes, there are eco-friendly plaster options, such as using lime-based plasters or recycled materials. Additionally, for suspended ceilings, there are environmentally friendly ceiling tile options made from recycled or sustainable materials.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: Can partitions be easily modified or moved?</div>
+    <div class="faq-answer">A: Modular partitions, like stud partitions, can be relatively easy to modify or move compared to more permanent partitions like brick walls. However, it still depends on the specific type of partition and the structural implications of the modification.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: How do I address soundproofing in plastered walls or suspended ceilings?</div>
+    <div class="faq-answer">A: To enhance soundproofing, consider using specialized acoustic plaster or incorporating acoustic ceiling tiles in suspended ceilings. Proper insulation materials can also contribute to reducing sound transmission in both plastered walls and ceilings.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: Can I use plaster in wet areas like bathrooms or kitchens?</div>
+    <div class="faq-answer">A: In wet areas, it's advisable to use moisture-resistant plaster or cement board to prevent water damage. Traditional plaster may not be suitable, but modern alternatives are designed to withstand such environments.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: What are the advantages of using drywall in partitioning?</div>
+    <div class="faq-answer">A: Drywall is known for its quick installation, versatility, and ease of finishing. It's a popular choice for partitioning due to its cost-effectiveness and the ability to easily integrate insulation within the wall structure.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: Are there fire-resistant options for plastering and suspended ceilings?</div>
+    <div class="faq-answer">A: Yes, there are fire-resistant plaster and ceiling tile options available. These materials are designed to meet fire safety standards and can be used in areas where fire protection is a concern.</div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Q: Can I install lighting fixtures directly into a suspended ceiling?</div>
+    <div class="faq-answer">A: Yes, suspended ceilings provide a convenient platform for installing lighting fixtures. The grid system allows for easy integration of recessed lights, track lighting, and other fixtures without compromising the ceiling's integrity.</div>
+</div>
+
 
 
   <section id="contact" class="section contact-section">
@@ -122,6 +175,18 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
+            var logoImage = document.getElementById("logoImage");
 
+            if (logoImage.complete) {
+                logoImage.classList.add("loaded");
+            } else {
+                logoImage.onload = function () {
+                    logoImage.classList.add("loaded");
+                };
+            }
+        });
+</script>
 
 </html>

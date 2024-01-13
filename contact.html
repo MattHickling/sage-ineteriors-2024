@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <a href="/services.html"> 
-                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                    <img class="logo-img" id="logoImage" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
                 </a>            
             </div>
             <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="/services.html">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects">Projects</a>
+                        <a class="nav-link" href="/projects">Our Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/faq">FAQ</a>
@@ -92,7 +92,19 @@
         </div>
 
     </section>
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
+            var logoImage = document.getElementById("logoImage");
 
+            if (logoImage.complete) {
+                logoImage.classList.add("loaded");
+            } else {
+                logoImage.onload = function () {
+                    logoImage.classList.add("loaded");
+                };
+            }
+        });
+</script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

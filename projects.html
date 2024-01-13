@@ -23,7 +23,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <a href="/services.html"> 
-                    <img class="logo-img" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
+                    <img class="logo-img" id="logoImage" src="assets/images/SAGEinteriors1.png" alt="Sage Interiors Logo">
                 </a>            
             </div>
             <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -129,31 +129,41 @@
         <section id="gallery" class="section gallery-section">
             <h2 class="gallery-title">Check Out Some Photos of Recent Projects</h2>
 
-            <h3>Comming soon!</h3>
+
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36.jpg" alt="Gallery Image 1 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[14].jpg" alt="Gallery Image 2 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[53].jpg" alt="Gallery Image 4 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[56].jpg" alt="Gallery Image 5 - Coming Soon">
+            </div>
             <!-- <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image1.jpg" alt="Gallery Image 1 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image2.jpg" alt="Gallery Image 2 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image3.jpg" alt="Gallery Image 3 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image4.jpg" alt="Gallery Image 4 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image5.jpg" alt="Gallery Image 5 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image6.jpg" alt="Gallery Image 6 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image7.jpg" alt="Gallery Image 7 - Coming Soon">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-img" src="path/to/image8.jpg" alt="Gallery Image 8 - Coming Soon">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[62].jpg" alt="Gallery Image 6 - Coming Soon">
             </div> -->
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[67].jpg" alt="Gallery Image 7 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[71].jpg" alt="Gallery Image 8 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[87].jpg" alt="Gallery Image 8 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[95].jpg" alt="Gallery Image 8 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-43-36[96].jpg" alt="Gallery Image 8 - Coming Soon">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-img" src="assets/images/Projects/PHOTO-2024-01-08-18-44-07.jpg" alt="Gallery Image 8 - Coming Soon">
+            </div>
+        
         </section>
 
         <section id="contact" class="section contact-section">
@@ -187,6 +197,18 @@
                       autoplaySpeed: 5000,
                   });
               });
+
+              document.addEventListener("DOMContentLoaded", function () {
+            var logoImage = document.getElementById("logoImage");
+
+            if (logoImage.complete) {
+                logoImage.classList.add("loaded");
+            } else {
+                logoImage.onload = function () {
+                    logoImage.classList.add("loaded");
+                };
+            }
+        });
           </script>
 </body>
 </html>
