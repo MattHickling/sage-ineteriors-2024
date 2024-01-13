@@ -1,7 +1,8 @@
 body {
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    width: 100%; /* Ensure the content fits within the viewport */
+    overflow-x: hidden; 
+    width: 100%; 
     position: relative;
+    background-color: #b1c4d8;
 }
 
 
@@ -12,6 +13,7 @@ body {
     height: 200px;
     position: relative;
     z-index: 1000;
+    margin-bottom: 20px;
 }
 
 .navbar-toggler {
@@ -29,8 +31,8 @@ body {
 
 .navbar-toggler-icon {
     background-color: #0757a7;
-    font-size: 0.3rem; /* Adjust the font size to make it smaller */
-    width: 0.3em; /* Set a fixed width for the icon */
+    font-size: 0.3rem; 
+    width: 0.3em;
 }
 
 
@@ -44,16 +46,15 @@ body {
 
 
 .logo-img {
-    width: 150px; /* Set a fixed width instead of max-width */
-    height: auto;
+    width: 150px; 
     opacity: 0;
     transition: opacity 1s ease-in-out, width 1s ease-in-out;
-    margin-top: 32px; /* Transition for opacity and width */
+    margin-top: 32px; 
 }
 
 .logo-img.loaded {
     opacity: 1;
-    width: 200px; /* Set the desired width after loading */
+    width: 200px; 
 }
 
 .collapse.navbar-collapse {
@@ -111,16 +112,15 @@ body {
     .navbar-toggler {
         display: none;
     }
-
-   
-    .collapse.navbar-collapse {
-        display: block !important;
-        position: relative;
-        margin-bottom: -330px; 
+  .card-img-top {
+        height: 250px; 
     }
-
+    .card.service-suspended .card-img-top {
+        height: 300px; 
+    }
+   
     .navbar {
-        height: 400px;
+        height: 300px;
     }
     .logo-img {
         max-width: 90%;
@@ -141,7 +141,6 @@ body {
 
 }
 
-/* Additional About Us Section Styles */
 .about-section {
     background-color: #f8f9fa;
     padding: 60px 0;
@@ -158,9 +157,9 @@ body {
 }
 
 .about-section p {
-    color: #555; /* Darker text color for better contrast */
-    font-size: 1.2em; /* Adjust font size as needed */
-    line-height: 1.6; /* Adjust line height for better readability */
+    color: #555; 
+    font-size: 1.2em; 
+    line-height: 1.6; 
 }
 
 @media (max-width: 768px) {
@@ -223,96 +222,96 @@ body {
 .testimonial-carousel {
     max-width: 800px;
     margin: auto;
+    margin-top: 10px;
 }
 
-/* Footer */
-.footer {
-    background-color: #0757a7;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+
 
 #introduction {
-    background-color: #043f79; /* Dark blue background color */
-    color: #fff; /* White text color */
-    padding: 60px 0; /* Adjust padding for spacing */
+    background-color: #043f79;
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
-    border-top: 5px solid #ecb22e; /* Yellow border at the top for emphasis */
+    border-top: 5px solid #ecb22e; 
 }
 
 .introduction-title {
-    font-size: 1.5em; /* Increase font size for emphasis */
+    font-size: 1.5em; 
     font-weight: bolder;
 }
 
 .introduction-section p {
-    font-size: 1.2em; /* Adjust font size for better readability */
-    line-height: 1.8; /* Adjust line height for more spacing */
-    max-width: 800px; /* Limit the width for better readability */
-    margin: 0 auto; /* Center the text */
+    font-size: 1.2em;
+    line-height: 1.8; 
+    max-width: 800px;
+    margin: 0 auto; 
 }
 
 /* Our Work Section */
 .our-work-section {
-    background-color: #f8f9fa; /* Light background color */
-    padding: 60px 0; /* Adjust the padding as needed */
+    background-color: #f8f9fa; 
+    padding: 60px 0; 
     text-align: center;
 }
 
 /* Our Work Section */
 .our-work-section {
-    background-color: #ffc107; /* Use a different background color, like yellow */
-    padding: 60px 0; /* Adjust the padding as needed */
+    background-color: #ffc107; 
+    padding: 60px 0;
     text-align: center;
 }
 
 .our-work-title {
-    color: #0757a7; /* Dark blue color for the title */
-    font-size: 2.5em; /* Increase font size for emphasis */
-    margin-bottom: 30px; /* Increase space between the title and content */
+    color: #0757a7; 
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
 }
 
 .our-work-section p {
-    color: #555; /* Slightly darker text color for better contrast */
-    font-size: 1.3em; /* Adjust the font size as needed */
-    line-height: 1.8; /* Adjust the line height for better readability */
-    margin-bottom: 40px; /* Increase space below the paragraph */
+    color: #555; 
+    font-size: 1.3em;
+    line-height: 1.8; 
+    margin-bottom: 40px; 
 }
 
 .btn-primary {
-    background-color: #e44d26; /* Use a different color for the button */
+    background-color: #e44d26; 
     color: #fff;
-    padding: 12px 24px; /* Increase padding for a larger button */
+    padding: 12px 24px; 
     text-decoration: none;
-    border-radius: 8px; /* Add a bit more rounding to the button */
-    border: 2px solid #e44d26; /* Add a border for better visibility */
-    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+    border-radius: 8px; 
+    border: 2px solid #e44d26;
+    transition: background-color 0.3s ease-in-out; 
 }
 
 .btn-primary:hover {
-    background-color: #053d6b; /* Darken the hover color */
-    border-color: #053d6b; /* Adjust border color on hover */
+    background-color: #053d6b; 
+    border-color: #053d6b; 
 }
 
 /* Services Section */
 .services-section {
     background-color: lightgray;
-    padding: 60px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
 .services-section h2 {
     color: #0757a7;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .service-item {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+.service-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .service-item h2 {
@@ -324,12 +323,10 @@ body {
     color: #555;
 }
 
-
 /* General Section Styles */
 .section {
     text-align: center;
 }
-
 /* Testimonial Carousel */
 .testimonial-carousel {
     max-width: 800px;
@@ -338,34 +335,34 @@ body {
 
 /* Bootstrap Overrides */
 .container-fluid {
-    max-width: 1200px; /* Adjust container width as needed */
+    max-width: 1200px;
 }
 
    /* Additional styles for the testimonials section */
 .testimonials-section {
-    background-color: #b1c4d8; /* Light background color */
-    padding: 40px 0; /* Adjust the padding as needed */
+    background-color: #b1c4d8; 
+    padding: 40px 0;
     text-align: center;
 }
 
 .testimonials-section h2 {
-    color: #0757a7; /* Dark blue color for the title */
-    margin-bottom: 20px; /* Space between the title and content */
+    color: #0757a7; 
+    margin-bottom: 20px; 
 }
 
 .testimonial-item {
-    background-color: #ffeeba; /* Yellow background color */
+    background-color: #ffeeba; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
 .testimonial-item p {
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .star-rating {
-    color: #f39c12; /* Yellow color for stars */
+    color: #f39c12; 
 }
 
 .star {
@@ -373,7 +370,7 @@ body {
 }
 
 .testimonial-author {
-    color: #6c757d; /* Gray color for author */
+    color: #6c757d; 
     margin-top: 10px;
 }
  /* Gallery Section Styles */
@@ -383,9 +380,9 @@ body {
 }
 
 .gallery-title {
-    color: #0757a7; /* Dark blue color for the title */
-    font-size: 2em; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Space between the title and content */
+    color: #0757a7; 
+    font-size: 2em; 
+    margin-bottom: 20px; 
 }
 
 .gallery-item {
@@ -448,7 +445,7 @@ body {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    color: #0757a7; /* Dark blue color for links */
+    color: #0757a7; 
     font-size: 1.5em;
 }
 
@@ -462,18 +459,18 @@ body {
 }
 
 .phone-icon {
-    color: #0757a7; /* Dark blue color for phone icon */
+    color: #0757a7;
     font-size: 2em;
     margin-right: 10px;
 }
 
 .quote {
-    background-color: #0757a7; /* Light background color */
-    color: #fff; /* White text color */
+    background-color: #0757a7; 
+    color: #fff; 
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
-    border: 2px solid #0757a7; /* Border color */
+    border: 2px solid #0757a7; 
     margin-bottom: 10;
 }
 
@@ -484,57 +481,121 @@ body {
 
 .quote footer {
     font-style: italic bold;
-    color: #bfc1c4; /* Gray color for author */
+    color: #bfc1c4;
     margin-top: 10px;
 }
 
 /* Hover effect for the quote */
 .quote:hover {
-    background-color: #ecb22e; /* Change background color on hover */
-    border-color: #0757a7; /* Change border color on hover */
+    background-color: #ecb22e; 
+    border-color: #0757a7; 
 }
 
 /* Our Services Section Styles */
 .our-services-section {
-    background-color: #ffc107; /* Background color for the section */
-    padding: 10px 0; /* Adjust the padding as needed */
+    background-color: #ffc107; 
+    padding: 10px 0; 
     text-align: center;
 }
 
 .our-services-title {
-    color: #0757a7; /* Dark blue color for the title */
-    font-size: 2.5em; /* Increase font size for emphasis */
-    margin-bottom: 10px; /* Increase space between the title and content */
+    color: #0757a7; 
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
 }
 
 .card {
     border: none; /* Remove card border */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    transition: transform 0.3s ease-in-out; 
+    flex-grow: 1; 
+    height: 100%; 
+    display: flex;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Increase card scale on hover */
+    transform: scale(1.05); 
 }
 
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 2px; /* Optional: add border-radius for rounded corners */
+    border-radius: 2px;
 }
 
 .card-body {
     padding: 20px;
+    flex-grow: 1;
 }
 
 .card-title {
-    color: #0757a7; /* Dark blue color for the card title */
-    font-size: 1.8em; /* Adjust font size for card title */
-    margin-top: 10px; /* Space between image and title */
+    color: #0757a7; 
+    font-size: 1.8em; 
+    margin-top: 10px; 
     font-weight: bolder;
 }
 
 @media (max-width: 576px) {
     .card {
-        margin-bottom: 20px; /* Add margin for better spacing on small screens */
+        margin-bottom: 20px; 
     }
+}
+
+.card.service-suspended .card-img-top {
+    height: 200px; 
+}
+
+/* Additional styling for larger screens */
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 200px; 
+    }
+    .card.service-suspended .card-img-top {
+        height: 225px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-img-top {
+        height: 250px; 
+    }
+    .card.service-suspended .card-img-top {
+        height: 300px; 
+    }
+}
+
+@media (min-width: 736px) {
+    .logo-img {
+        width: 550px; 
+        max-width: none; 
+    }
+    .navbar{
+        height: 200px;
+    }
+    
+}
+
+.footer {
+    background-color: #043f79; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.2em; 
+}
+
+.footer-business-name {
+    font-weight: bold; 
+    font-size: 1.5em; 
+    color: #2ebcec; 
 }

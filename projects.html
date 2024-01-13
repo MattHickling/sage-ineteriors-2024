@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/carousel-min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/carousel.css"/>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hamburgers/dist/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hamburger-min.css">
 
     <title>Sage Interiors - Plastering Experts</title>
 </head>
@@ -182,33 +182,18 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-      
-       
-      
-          <script>
-              $(document).ready(function () {
-                  $('.testimonial-carousel').slick({
-                      dots: true,
-                      arrows: false,
-                      autoplay: true,
-                      autoplaySpeed: 5000,
-                  });
-              });
 
-              document.addEventListener("DOMContentLoaded", function () {
-            var logoImage = document.getElementById("logoImage");
+        <div class="footer">
+            <p class="footer-text">
+                <span class="footer-business-name">MediaStash</span><br>
+                &copy; <span id="current-year"></span>. All rights reserved. Unauthorized copying or reproduction of content is prohibited.
+            </p>
+        </div>
 
-            if (logoImage.complete) {
-                logoImage.classList.add("loaded");
-            } else {
-                logoImage.onload = function () {
-                    logoImage.classList.add("loaded");
-                };
-            }
-        });
-          </script>
+        <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/carousel.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/app.js"></script>
+
 </body>
 </html>
