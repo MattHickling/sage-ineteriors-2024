@@ -9,7 +9,7 @@ body {
 .navbar {
     background-color: #0757a7;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     height: 200px;
     position: relative;
     z-index: 1000;
@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0px;
     background-color: #0757a7;
-    right: -3px;
+    right: 1px;
     max-width: 100%;
     
 }
@@ -143,17 +143,19 @@ body {
 
 .about-section {
     background-color: #f8f9fa;
-    padding: 60px 0;
+    /* padding: 60px 0; */
 }
 
 .about-us-title {
     color: #0757a7;
     background-color: #ecb22e;
-    padding: 15px;
+    padding: 10px;
     font-size: 2rem;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-left: -20px; /* Adjust negative margin to offset container padding */
+    margin-right: -20px;
 }
 
 .about-section p {
@@ -226,13 +228,12 @@ body {
 }
 
 
-
 #introduction {
     background-color: #043f79;
     color: #fff;
-    padding: 60px 0;
     text-align: center;
     border-top: 5px solid #ecb22e; 
+    margin-top: -20px;
 }
 
 .introduction-title {
@@ -243,14 +244,13 @@ body {
 .introduction-section p {
     font-size: 1.2em;
     line-height: 1.8; 
-    max-width: 800px;
     margin: 0 auto; 
 }
 
 /* Our Work Section */
 .our-work-section {
     background-color: #f8f9fa; 
-    padding: 60px 0; 
+    padding: 30px 0; 
     text-align: center;
 }
 
@@ -428,17 +428,30 @@ body {
     text-align: center;
 }
 
+
 .contact-reasons {
     margin: 30px 0;
+    background-color: #ecb22e;  
+    margin-bottom: -18px;
+    padding-bottom: 10px;
+
 }
 
 .contact-reasons p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+#contact-form{
+    background-color: #0757a7;
+    padding-bottom: 10px;
 }
 
 .follow-us {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    background-color: #6c757d;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .follow-us a {
@@ -457,6 +470,19 @@ body {
 .phone-contact {
     margin-top: 30px;
 }
+
+.phone-contact a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.5rem;
+}
+
+.phone-contact p {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.5rem;
+}
+
 
 .phone-icon {
     color: #0757a7;
@@ -547,6 +573,8 @@ body {
     .card {
         margin-bottom: 20px; 
     }
+    #introduction {
+        padding-top: 10px;    }
 }
 
 .card.service-suspended .card-img-top {
@@ -561,6 +589,9 @@ body {
     .card.service-suspended .card-img-top {
         height: 225px;
     }
+    #introduction {
+        margin-top: -20px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -569,6 +600,9 @@ body {
     }
     .card.service-suspended .card-img-top {
         height: 300px; 
+    }
+    #introduction {
+        margin-top: 60px;
     }
 }
 
@@ -599,3 +633,5 @@ body {
     font-size: 1.5em; 
     color: #2ebcec; 
 }
+
+
