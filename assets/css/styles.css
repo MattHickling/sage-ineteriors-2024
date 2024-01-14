@@ -1,10 +1,21 @@
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 400; /* Adjust the weight based on your font files */
+    src: url('assets/fonts/Noto_Sans_KR/static/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+body, h1, h2, p {
+    font-family: 'Noto Sans Korean', sans-serif;
+}
+
+
 body {
     overflow-x: hidden; 
     width: 100%; 
     position: relative;
     background-color: #b1c4d8;
 }
-
 
 .navbar {
     background-color: #0757a7;
@@ -146,6 +157,10 @@ body {
     /* padding: 60px 0; */
 }
 
+#about{
+    background-color: #d2d5d8;
+}
+
 .about-us-title {
     color: #0757a7;
     background-color: #ecb22e;
@@ -155,7 +170,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-left: -20px; /* Adjust negative margin to offset container padding */
-    margin-right: -20px;
+    margin-right: -12px;
 }
 
 .about-section p {
@@ -245,6 +260,23 @@ body {
     font-size: 1.2em;
     line-height: 1.8; 
     margin: 0 auto; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.previous-work {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0757a7;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.previous-work:hover {
+    background-color: #053d6b;
 }
 
 /* Our Work Section */
@@ -292,8 +324,9 @@ body {
 /* Services Section */
 .services-section {
     background-color: lightgray;
-    padding: 15px 0;
+    padding: 55px 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 .services-section h2 {
@@ -401,6 +434,7 @@ body {
         margin-top: 50px;
         color: #0757a7;
         background-color:#ecb22e;
+        padding-top: 10px;
 }
 
 .faq-item {
@@ -428,18 +462,24 @@ body {
     text-align: center;
 }
 
-
+div.contact-reasons {
+    text-align: center;
+}
 .contact-reasons {
-    margin: 30px 0;
     background-color: #ecb22e;  
     margin-bottom: -18px;
     padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: -20px;
+    color: #ffff;
+
 
 }
 
 .contact-reasons p {
     font-size: 1.2em;
-    /* margin-bottom: 20px; */
+    margin: 5px;
+    margin-bottom: 20px;
 }
 
 #contact-form{
@@ -452,6 +492,9 @@ body {
     background-color: #6c757d;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: -10px;
 }
 
 .follow-us a {
@@ -467,8 +510,17 @@ body {
     color: #f8f9fa;
 }
 
+.follow-us p{
+    margin:5px;
+}
+
 .phone-contact {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    background-color: #6c757d;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
 }
 
 .phone-contact a {
@@ -567,6 +619,20 @@ body {
     font-size: 1.8em; 
     margin-top: 10px; 
     font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0757a7; /* Set your preferred background color */
+    color: #fff; /* Set your preferred text color */
+    text-decoration: none; 
+    border-radius: 8px; 
+    transition: background-color 0.3s;
+}
+
+
+
+.card.service a:hover {
+    background-color: #0056b3; /* Change background color on hover */
 }
 
 @media (max-width: 576px) {
@@ -591,6 +657,17 @@ body {
     }
     #introduction {
         margin-top: -20px;
+    }
+    #introduction {
+        background-color: #043f79;
+        color: #fff;
+        text-align: center;
+        border-top: 5px solid #ecb22e; 
+        padding-top: 10px;
+    }
+    .logo-img{
+        margin-left: -920px;
+        height:200px;
     }
 }
 
@@ -632,6 +709,59 @@ body {
     font-weight: bold; 
     font-size: 1.5em; 
     color: #2ebcec; 
+}
+
+#intro {
+    background-color: #043f79;
+    color: #ffff;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: -20px;
+    border-top: 2px solid #ecb22e;
+}
+
+#intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#cookie-consent {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#cookie-consent p {
+    margin: 0;
+}
+
+#cookie-consent button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #0757a7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cookie-consent button:hover {
+    background-color: #053d6b;
 }
 
 

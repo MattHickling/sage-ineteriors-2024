@@ -13,6 +13,11 @@
     <title>Sage Interiors - Plastering: Warmley, Longwell Green, Barrs Court</title>
 </head>
     <body>
+        <div id="cookie-consent" style="display: none;">
+            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+            <button onclick="acceptCookies()">Accept</button>
+            <button onclick="rejectCookies()">Reject</button>
+        </div>
 
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -69,41 +74,48 @@
             <div class="row">
                 <div class="col-12 col-md-6 mb-4">
                     <div class="card service">
-                        <img src="assets/images/plastering.jpeg" class="card-img-top" alt="Plastering Image">
-                        <div class="card-body">
-                            <h3 class="card-title">Plastering</h3>
-                        </div>
+                        <a href="/services.html#plastering"> 
+                            <img src="assets/images/plastering.jpeg" class="card-img-top" alt="Plastering Image">
+                            <div class="card-body">
+                                <h3 class="card-title">Plastering</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-4">
                     <div class="card service">
-                        <img src="assets/images/partitioning.jpeg" class="card-img-top" alt="Partitioning Image">
-                        <div class="card-body">
-                            <h3 class="card-title">Partitioning</h3>
-                        </div>
+                        <a href="/services.html#drylining"> 
+                            <img src="assets/images/drylining.jpeg" class="card-img-top" alt="Drylining Image">
+                            <div class="card-body">
+                                <h3 class="card-title">Drylining</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12 col-md-6 mb-4">
                     <div class="card service">
-                        <img src="assets/images/drylining.jpeg" class="card-img-top" alt="Drylining Image">
-                        <div class="card-body">
-                            <h3 class="card-title">Drylining</h3>
-                        </div>
+                        <a href="/services.html#partitions"> 
+                            <img src="assets/images/partitioning.jpeg" class="card-img-top" alt="Partitioning Image">
+                            <div class="card-body">
+                                <h3 class="card-title">Partitioning</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-4">
                     <div class="card service service-suspended">
-                        <img src="assets/images/suspended.jpeg" class="card-img-top" alt="Suspended Ceilings Image">
-                        <div class="card-body">
-                            <h3 class="card-title">Suspended Ceilings</h3>
-                        </div>
+                        <a href="/services.html#suspended-ceilings"> 
+                            <img src="assets/images/suspended.jpeg" class="card-img-top" alt="Suspended Ceilings Image">
+                            <div class="card-body">
+                                <h3 class="card-title">Suspended Ceilings</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
     <blockquote class="quote">
         <p>A successful project starts with clear communication, understanding your unique needs, and delivering personalized solutions that align with your vision and budget.</p>
@@ -115,7 +127,7 @@
         <div class="container">
             <h2 class="our-work-title">Check Out testimonials</h2>
             <p>Explore some of our completed projects to witness the quality of our craftsmanship.</p>
-            <a href="/projects" class="btn btn-primary">Previous work</a>
+            <a href="/services.html#testimonials" class="previous-work">Previous work</a>
         </div>
     </section>
 
@@ -123,20 +135,23 @@
     
 
     <section id="contact" class="section contact-section">
-      <h2>Contact Us</h2>
-      <p>Ready to transform your space? Reach out to us for a quote or any inquiries.</p>
-      <form id="contact-form" action="contact.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-  
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-  
-          <button type="submit">Submit</button>
-      </form>
+        <h2>Contact Us</h2>
+        <p>Ready to transform your space? Reach out to us for a quote or any inquiries.</p>
+        <form id="contact-form" action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <!-- HTML Structure -->
