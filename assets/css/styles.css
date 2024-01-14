@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Noto Sans Korean';
     font-style: normal;
-    font-weight: 400; /* Adjust the weight based on your font files */
+    font-weight: 400; 
     src: url('assets/fonts/Noto_Sans_KR/static/NotoSansKR-Regular.ttf') format('truetype');
 }
 
@@ -147,14 +147,10 @@ body {
     .nav-item {
         margin-left: 15px; 
     }
-    
-    
-
 }
 
 .about-section {
     background-color: #f8f9fa;
-    /* padding: 60px 0; */
 }
 
 #about{
@@ -169,7 +165,7 @@ body {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-left: -20px; /* Adjust negative margin to offset container padding */
+    margin-left: -20px; 
     margin-right: -12px;
 }
 
@@ -430,11 +426,11 @@ body {
 }
 
 .faq{
-        text-align: center;
-        margin-top: 50px;
-        color: #0757a7;
-        background-color:#ecb22e;
-        padding-top: 10px;
+    text-align: center;
+    margin-top: 50px;
+    color: #0757a7;
+    background-color:#ecb22e;
+    padding-top: 10px;
 }
 
 .faq-item {
@@ -583,7 +579,7 @@ div.contact-reasons {
 }
 
 .card {
-    border: none; /* Remove card border */
+    border: none; 
     transition: transform 0.3s ease-in-out; 
     flex-grow: 1; 
     height: 100%; 
@@ -622,8 +618,8 @@ div.contact-reasons {
     text-decoration: none;
     display: inline-block;
     padding: 10px 15px;
-    background-color: #0757a7; /* Set your preferred background color */
-    color: #fff; /* Set your preferred text color */
+    background-color: #0757a7;
+    color: #fff; 
     text-decoration: none; 
     border-radius: 8px; 
     transition: background-color 0.3s;
