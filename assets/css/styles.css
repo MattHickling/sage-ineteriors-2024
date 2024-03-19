@@ -21,7 +21,7 @@ body {
     background-color: #0757a7;
     padding-top: 15px;
     padding-bottom: 10px;
-    height: 200px;
+    height: 600px;
     position: relative;
     z-index: 1000;
     margin-bottom: 20px;
@@ -46,15 +46,12 @@ body {
     width: 0.3em;
 }
 
-
-
 .logo {
     text-align: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);    
 }
-
 
 .logo-img {
     width: 150px; 
@@ -116,6 +113,10 @@ body {
         position: absolute;
         top: 5px;
         right: 3px;
+    }
+    .div.card-body{
+        background-color: #0757a7;
+        height:200px;
     }
 }
 
@@ -243,7 +244,6 @@ body {
     background-color: #043f79;
     color: #fff;
     text-align: center;
-    border-top: 5px solid #ecb22e; 
     margin-top: -20px;
 }
 
@@ -468,8 +468,6 @@ div.contact-reasons {
     padding-top: 20px;
     margin-top: -20px;
     color: #ffff;
-
-
 }
 
 .contact-reasons p {
@@ -658,7 +656,7 @@ div.contact-reasons {
         background-color: #043f79;
         color: #fff;
         text-align: center;
-        border-top: 5px solid #ecb22e; 
+        /* border-top: 5px solid #ecb22e;  */
         padding-top: 10px;
     }
     .logo-img{
