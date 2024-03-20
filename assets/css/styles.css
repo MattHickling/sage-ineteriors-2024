@@ -103,7 +103,7 @@ body {
         padding: 10px; 
         z-index: 2; 
     }
-
+    
     .navbar-toggler {
         border: none;
         outline: none;
@@ -629,6 +629,7 @@ div.contact-reasons {
     background-color: #0056b3; /* Change background color on hover */
 }
 
+
 @media (max-width: 576px) {
     .card {
         margin-bottom: 20px; 
@@ -638,7 +639,7 @@ div.contact-reasons {
 }
 
 .card.service-suspended .card-img-top {
-    height: 200px; 
+    height: 88% !important; 
 }
 
 /* Additional styling for larger screens */
